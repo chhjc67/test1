@@ -4,12 +4,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'app-users-loader',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   template: `<p>users-loader works!</p>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UsersLoaderComponent {
-
-}
+export class UsersLoaderComponent {}

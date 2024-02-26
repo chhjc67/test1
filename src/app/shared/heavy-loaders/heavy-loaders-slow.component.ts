@@ -4,12 +4,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'app-heavy-loaders-slow',
   standalone: true,
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   template: `<p>heavy-loaders slow works!</p>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeavyLoadersSlowComponent {
-
-}
+export class HeavyLoadersSlowComponent {}

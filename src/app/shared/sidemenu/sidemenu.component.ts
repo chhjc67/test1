@@ -19,12 +19,12 @@ export class SidemenuComponent {
     .flat()
     .filter(route => route && route.path)
     .filter(route => !route.path?.includes(':'))
-  constructor() {
+  // constructor() {
     // const dashboardRouter = routes.map(
     //   route => route.children ?? [])
     //   .flat()
     //   .filter(route => route && route.path)
     //   .filter(route => !route.path?.includes(':'))
     // console.log(dashboardRouter);
-  }
+  // }
 }

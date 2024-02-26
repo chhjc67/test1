@@ -3,16 +3,11 @@ import { RouterModule } from '@angular/router';
 import { SidemenuComponent } from '@shared/sidemenu/sidemenu.component';
 
 @Component({
-  selector: 'app-dashboard',  
+  selector: 'app-dashboard',
   standalone: true,
-  imports: [
-    RouterModule,
-    SidemenuComponent
-  ],
+  imports: [RouterModule, SidemenuComponent],
   templateUrl: './dashboard.component.html',
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class DashboardComponent {
-
-}
+export default class DashboardComponent {}
