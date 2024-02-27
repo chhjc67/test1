@@ -17,7 +17,7 @@ export const routes: Routes = [
         },
         {
             path: 'defer-options',
-            title: 'Defer optiions',
+            title: 'Defer options',
             loadComponent: () => import('./dashboard/pages/defer-options/defer-options.component'),
         },
         {

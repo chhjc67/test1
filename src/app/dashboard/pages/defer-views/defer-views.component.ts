@@ -6,7 +6,7 @@ import { TitleComponent } from '@shared/title/title.component';
 @Component({
   selector: 'app-defer-views',
   standalone: true,
-  imports: [CommonModule, HeavyLoadersSlowComponent, TitleComponent],
+  imports: [CommonModule, TitleComponent, HeavyLoadersSlowComponent],
   templateUrl: './defer-views.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
