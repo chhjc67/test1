@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { TitleComponent } from '@shared/title/title.component';
 import { __values } from 'tslib';
 
 type Grade = 'A' | 'B' | 'C' | 'D';
@@ -7,7 +8,7 @@ type Grade = 'A' | 'B' | 'C' | 'D';
 @Component({
   selector: 'app-control-flow',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TitleComponent],
   templateUrl: './control-flow.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
