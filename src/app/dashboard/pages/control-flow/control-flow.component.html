@@ -1,1 +1,40 @@
-<p>control-flow works! Julissa</p>
+<app-title title="Conmtrol flow" />
+<section class="grid grid-cols-1 md:grid-cols-2 gad-3">
+    <div class="bg-write rounded shadow p-10 m-2">
+        <h2 class="text-2xl font-bold mb-5">if: {{showContent()}}</h2>
+        <button class="p-2 bg-blue-500 rounded text-write" (click)="toggleContent()">Click me</button>
+        @if(showContent()) {
+            <p>Hola Julissa</p>
+        }@else {
+            <p>Hola Andrea</p>
+        }
+    </div>
+    <div class="bg-write rounded shadow p-10 m-2">
+        @switch (grade()) {
+            @case ('A') {
+                <p>Letra A</p>
+            }
+            @case ('B') {
+                <p>Letra B</p>
+            }
+            @case ('C') {
+                <p>Letra C</p>
+            }
+            @default {
+                <p>Letra D</p>
+            }
+        }
+    </div>
+    <div class="bg-write rounded shadow p-10 m-2">
+        <ul>
+            @for (item of frameworks(); track frameworks; let ii = $index, even = $even, odd = $odd) {
+                <li [class]="{
+                  'bg-gray-300': even,
+                  'bg-gray-200': odd
+                 }">{{item}}</li>
+            }@empty {
+                <li>Sin elementos</li>
+            }
+        </ul>
+    </div>
+</section>
