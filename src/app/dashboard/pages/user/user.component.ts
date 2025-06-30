@@ -45,9 +45,9 @@ export default class UserComponent {
     return `Información...`;
   });
 
-  // constructor(){
-  //   this.route.params.subscribe(params => {
-  //     console.log(params);
-  //   });
-  // }
+  constructor(){
+     this.route.params.subscribe(params => {
+       console.log(params);
+     });
+   }
 }
